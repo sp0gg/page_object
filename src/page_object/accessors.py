@@ -1,4 +1,4 @@
-from page_object.locator_generator import LocatorGenerator
+from .locator_generator import LocatorGenerator
 
 class Accessors(object):
     """
