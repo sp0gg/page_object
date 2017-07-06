@@ -1,4 +1,4 @@
-from page_object.browser_factory import BrowserFactory
+from .browser_factory import BrowserFactory
 
 
 class Browser():

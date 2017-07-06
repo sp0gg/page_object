@@ -1,7 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
-from page_object.locator_generator import LocatorGenerator
-from page_object.expected_conditions import element_exists, element_predicate
+from .locator_generator import LocatorGenerator
+from .expected_conditions import element_exists, element_predicate
 
 
 class Element(LocatorGenerator, object):
@@ -112,5 +112,5 @@ class Element(LocatorGenerator, object):
         return self.element.send_keys(keys)
 
     def _load_locator(self, element):
-        from page_object.locator import Locator
+        from .locator import Locator
         self.locator = Locator(element)

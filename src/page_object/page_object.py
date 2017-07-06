@@ -68,5 +68,5 @@ class PageObject(LocatorGenerator, Accessors, object):
         time.sleep(seconds)
 
     def _load_locator(self, browser):
-        from page_object.locator import Locator
+        from .locator import Locator
         self.locator = Locator(browser)

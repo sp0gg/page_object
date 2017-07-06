@@ -1,4 +1,4 @@
-from page_object.browser import Browser
+from .browser import Browser
 
 
 def on(page, visit_page=False, url_params={}):

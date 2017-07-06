@@ -1,4 +1,4 @@
-from page_object.elements.element import Element
+from .elements.element import Element
 
 
 class Span(Element):
